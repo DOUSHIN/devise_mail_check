@@ -1,0 +1,40 @@
+<% flash.each do |key, value| %>
+  <%= content_tag(:div, value, class: "#{key}") %>
+<% end %>
+
+<h1>サインアップ(慶之/杏奈の入力用フォーム)</h1>
+<% if @character.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@character.errors.count, "error") %>:</h2>
+    <ul>
+    <% @character.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_with(model:@character,local:true) do |format| %>
+  <%= format.label :character_name %>
+  <%= format.text_field :character_name %>
+  <%= format.label :profile_author %>
+  <%= format.select :profile_author, [["慶之","慶之"],["杏奈","杏奈"]] %>
+  <%= format.label :encounter %>
+  <%= format.text_field :encounter %>
+  <%= format.label :personality %>
+  <%= format.text_field :personality %>
+  <%= format.label :good_point %>
+  <%= format.text_field :good_point %>
+  <%= format.label :respect_point %>
+  <%= format.text_field :respect_point %>
+  <%= format.label :episode %>
+  <%= format.text_field :episode %>
+  <%= format.label :appreciation %>
+  <%= format.text_field :appreciation %>
+  <%= format.label :appreciation_from_bride %>
+  <%= format.text_field :appreciation_from_bride %>
+  <%= format.label :password %>
+  <%= format.password_field :password %>
+  <%= format.label :password_confirmation %>
+  <%= format.password_field :password_confirmation %>
+  <%= format.submit "登録" %>
+<% end %>

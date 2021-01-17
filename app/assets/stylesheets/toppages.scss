@@ -1,0 +1,141 @@
+// Place all the styles related to the toppages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  background-color: rgba(0,0,0,1);
+  height: 44px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+
+.header-surface h3 {
+  font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: .011em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  cursor: default;
+  display: block;
+  padding: 0;
+  white-space: nowrap;
+  margin:0;
+}
+
+.header-surface {
+  margin: 0 auto;
+  width: 100%;
+  height: 44px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header-heading {
+  color: #fff;
+  height: 44px;
+  text-decoration: none;
+  top: 11px;
+  margin-left: 700px;
+}
+
+.CatchCopy {
+  text-align: center;
+  height: 190px;
+  background-color: #fff;
+  padding-top: 150px;
+}
+
+.CatchCopy-title {
+  margin-top:0;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.time_introduction_img_tile:hover{
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.place_introduction_img_tile:hover{
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.character_introduction_img_tile:hover{
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+img.time_introduction_img{
+  width: 675px;
+  height: 675px;
+  margin-left: 22.5px;
+}
+
+img.place_introduction_img{
+  width: 675px;
+  height: 675px;
+  margin-left: 22.5px;
+}
+
+img.character_introduction_img{
+  width: 1395px;
+  height: 784px;
+  margin-left: 22.5px;
+}
+
+.time_introduction{
+  float: left;
+  width: 50%;
+}
+
+.place_introduction{
+  float: left;
+  width: 50%;
+}
+
+.time_introduction_img_tile p{
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  top:600px;
+  left:85px;
+  display: block;
+}
+
+.place_introduction_img_tile p{
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  top:600px;
+  left:1005px;
+}
+
+.character_introduction{
+  width: 100%;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.character_introduction_img_tile{
+  height: 784px;
+}
+
+.character_introduction_img{
+  margin-top: 35px;
+}
+
+.character_introduction_img_tile p{
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  top:1350px;
+  left:180px;
+}
